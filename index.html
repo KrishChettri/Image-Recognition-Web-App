@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Face recognition</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+    <h1>Face Recognition</h1>
+
+    <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+    <h1 class="btn btn-primary">Father</h1>
+    <br>
+    <h1 class="btn btn-primary">Mother</h1>
+    <br>
+    <h1 class="btn btn-primary">Brother</h1>
+    <br>
+    <h1 class="btn btn-primary">Me</h1>
+   <br><br>
+
+        <label>Webcam View-</label>
+        <div id="camera">
+            <br><br>
+            <div id="result"></div>
+           <br><br>
+            <button onclick="take_snapshot();" class="btn btn-info">Take Picture</button>
+            <br><br>
+            <button onclick="check()" class="btn btn-success">Identify Image</button>
+            <br><br>
+            
+            <h4>Object: <span id="obj_name"></span> </h4>
+            <h4>Accuracy: <span id="obj_accuracy"></span> </h4>
+
+
+        </div>
+    </div>
+
+
+   
+        <script src="main.js"></script>
+    </body>
+</html>
