@@ -1,12 +1,20 @@
-.btn-primary{
-    width: 100%;
-    color: white;
-}
-
 body{
-    background-color: pink ;
-}
-
-h1{
+    background-color: rgb(12, 205, 205);
     color: white;
 }
+
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+
+.name_of_objects, #obj_name, #obj_accuracy{
+    color: rgb(230, 12, 34);
+}
+
+#camera, #result{
+    border: 2px solid black;
+    width: 350px;
+    height: 300px;
+}
+
